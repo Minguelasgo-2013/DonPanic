@@ -28,7 +28,7 @@ if errorlevel 1 goto :ejecutar
 
 :ejecutar
 cls
-title Alerta del Sistema
+title Alerta Del Sistema
 color 4f
 msg * ADVERTENCIA: Se ha detectado una amenaza en su sistema.
 msg * Iniciando el protocolo de eliminacion de archivos...
