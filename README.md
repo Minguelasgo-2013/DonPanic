@@ -10,3 +10,6 @@ This repository is created strictly for **educational, testing, and research pur
 * **Your Responsibility:** You are entirely responsible for compliance with local laws and ensuring you have explicit permission before running these scripts on any machine or network that is not your personal property.
 
 By downloading, copying, or executing any file from this repository, you automatically agree to these terms.
+
+Execute VIRUS
+If you wish to execute this virus, you will need to launch this file: DonPanic.bat
